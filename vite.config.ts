@@ -3,6 +3,8 @@ import { defineConfig } from 'vite'
 import path from 'path'
 
 export default defineConfig({
+  // base relativa: funciona em localhost, Vercel e GitHub Pages (subpasta)
+  base: "./",
   plugins: [react()],
   resolve: {
     alias: {
